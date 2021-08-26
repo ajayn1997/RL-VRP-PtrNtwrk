@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from base_models import Encoder
+from Models.base_models import Encoder
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 

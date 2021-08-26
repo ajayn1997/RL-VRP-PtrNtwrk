@@ -64,7 +64,7 @@ class Pointer(nn.Module):
                                           device=device, requires_grad=True))
 
         # Used to compute a representation of the current decoder output
-        self.gru = nn.LSTM(hidden_size, hidden_size, num_layers,
+        self.gru = nn.GRU(hidden_size, hidden_size, num_layers,
                           batch_first=True,
                           dropout=dropout if num_layers > 1 else 0)
         self.encoder_attn = Attention(hidden_size)

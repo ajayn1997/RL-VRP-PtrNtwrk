@@ -180,7 +180,7 @@ def train_vrp(args):
     # VRP50, Capacity 40:  11.39 (Greedy)
     # VRP100, Capacity 50: 17.23  (Greedy)
 
-    
+    print('Starting VRP training')
 
     # Determines the maximum amount of load for a vehicle based on num nodes
     LOAD_DICT = {10: 20, 20: 30, 50: 40, 100: 50}
